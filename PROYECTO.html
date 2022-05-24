@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script src="./metodos.js"></script>
+   
+   <script>
+     
+        alert("Introduce tu nombre de usuario, solo debe contener letras y no superar los 8 caracteres")
+        var usser=prompt("")
+        if( usser.length==8 && usser.toUpperCase){
+            
+      alert("Para la elección de personajes debe escoger el primer caracter del nombre. Los personaje son: \n"+" Cazador \n"+"Liebre \n"+"Tortuga \n")  
+     var dato=prompt("Seleccione su personaje").toLowerCase()
+    jugador(dato)
+    alert("Para la elección de estación del año debe escoger el primer caracter de dicha estación.")
+   var estacionn=prompt("Elija la estación del año")
+   estacion(estacionn)
+   UstedEs(usser,dato, estacionn)
+   }
+        else{
+            alert("Intentelo de nuevo")
+        }
+</script>
+
+</body>
+</html>
